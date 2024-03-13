@@ -14,7 +14,7 @@ class Solution:
         for s in text: #Time cost of loop O(n)
             counts[s]+=1 #Space cost to store variables O(n)
         counts['l']//=2 # Operation divide cost O(1)
-        counts['o']//=2 # Operation divide cost O(n)
+        counts['o']//=2 # Operation divide cost O(1)
         return min(counts['b'],counts['a'],counts['l'],counts['o'],counts['n']) # Min check cost O(1)
     '''
     Total time cost O(n)
